@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="joaovictor.css">
+    <title>Contato com Yuri Alberto</title>
+
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+
+    <div class="secao">
+
+        <form id="formulario-contato" onsubmit="return revisarFormulario()">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Revisar">
+        </form>
+    </div>
+
+    <div id="revisao" class="secao" style="margin-top: 20px;"></div>
+    <script src="Formulario.js"></script>
+
+</body>
+</html>
